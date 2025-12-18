@@ -9,7 +9,7 @@ const planRoutes = require("./src/routes/planRoutes");
 const statsRoutes = require("./src/routes/statsRoutes");
 
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors());
