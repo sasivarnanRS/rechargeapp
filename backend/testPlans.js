@@ -7,7 +7,7 @@ const testPlans = async () => {
 
         for (const op of operators) {
             try {
-                const res = await axios.get(`http://localhost:5000/api/plans/${op}`);
+                const res = await axios.get(`http://localhost:5000/plans/${op}`);
                 console.log(`[SUCCESS] fetched plans for '${op}'. Count: ${res.data.length}`);
             } catch (err) {
                 console.log(`[ERROR] fetching plans for '${op}': ${err.message}`);

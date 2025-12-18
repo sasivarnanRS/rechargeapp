@@ -26,11 +26,11 @@ app.use((req, res, next) => {
 connectDB();
 
 // Routes
-app.use("/api/products", productRoutes);
-app.use("/api/users", userRoutes);
-app.use("/api/recharges", rechargeRoutes);
-app.use("/api/plans", planRoutes);
-app.use("/api/stats", statsRoutes);
+app.use("/products", productRoutes);
+app.use("/users", userRoutes);
+app.use("/recharges", rechargeRoutes);
+app.use("/plans", planRoutes);
+app.use("/stats", statsRoutes);
 
 // Test route (optional)
 app.get("/", (req, res) => {

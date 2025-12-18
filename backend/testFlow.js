@@ -4,7 +4,7 @@ const User = require('./src/models/userModel');
 const Plan = require('./src/models/planModel');
 const Recharge = require('./src/models/rechargeModel');
 
-const BASE_URL = 'http://localhost:5000/api';
+const BASE_URL = 'http://localhost:5000';
 
 async function runTest() {
     console.log("Starting End-to-End Test...");

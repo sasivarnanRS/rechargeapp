@@ -5,6 +5,10 @@ const planController = require("../controllers/planController");
 router.delete("/", planController.deleteAllPlans);
 
 // Routes
+router.get("/", (req, res, next) => {
+    req.params.operator = 'all';
+    next();
+}, planController.getPlansByOperator);
 router.get("/:operator", planController.getPlansByOperator);
 router.post("/", planController.createPlan);
 router.put("/:id", planController.updatePlan);
